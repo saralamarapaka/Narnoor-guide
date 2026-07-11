@@ -3,56 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Narnoor Village Guide</title>
+<title>Narnoor Mandal - Village Places</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
+*{
     margin:0;
-    background:#f5f5f5;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
 }
 
 header{
     background:#0d6efd;
     color:white;
-    padding:20px;
+    padding:25px;
     text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
 }
 
-#search{
-    width:90%;
-    max-width:500px;
-    padding:12px;
-    margin:20px auto;
-    display:block;
-    border-radius:8px;
-    border:1px solid #ccc;
+header h1{
+    font-size:30px;
+}
+
+header p{
+    margin-top:8px;
     font-size:16px;
+}
+
+.search-box{
+    width:90%;
+    max-width:700px;
+    margin:25px auto;
+}
+
+.search-box input{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:17px;
+    outline:none;
 }
 
 .container{
     width:90%;
     max-width:900px;
     margin:auto;
+    padding-bottom:40px;
 }
 
 .place{
     background:white;
-    margin:10px 0;
-    padding:15px;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,.15);
+    margin:12px 0;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    transition:0.3s;
+}
+
+.place:hover{
+    transform:scale(1.02);
+}
+
+.place h3{
+    color:#0d6efd;
+    margin-bottom:8px;
+}
+
+.place p{
+    color:#555;
+    margin-bottom:10px;
 }
 
 .place a{
+    display:inline-block;
+    background:#198754;
+    color:white;
     text-decoration:none;
-    color:#0d6efd;
-    font-size:18px;
-    font-weight:bold;
+    padding:10px 18px;
+    border-radius:8px;
 }
 
 .place a:hover{
-    color:red;
+    background:#146c43;
 }
 </style>
 
@@ -61,59 +98,208 @@ header{
 <body>
 
 <header>
-<h1>Narnoor Village Guide</h1>
-<p>Click any place to open Google Maps</p>
+
+<h1>Narnoor Mandal</h1>
+
+<p>Adilabad District - Click on any place to open Google Maps</p>
+
 </header>
+
+<div class="search-box">
 
 <input type="text" id="search" placeholder="Search Place...">
 
-<div class="container" id="list">
+</div>
+
+<div class="container">
 
 <div class="place">
+<h3>NUR - SBI</h3>
+<p>Category : Bank</p>
 <a href="https://www.google.com/maps?q=19.50065,78.84709" target="_blank">
-SBI Bank
+Open in Google Maps
 </a>
 </div>
 
 <div class="place">
+<h3>NUR - KAPIL DRESS STORE</h3>
+<p>Category : Clothing Store</p>
 <a href="https://www.google.com/maps?q=19.50077,78.84691" target="_blank">
-Kapil Dress Store
+Open in Google Maps
 </a>
 </div>
 
 <div class="place">
-<a href="https://www.google.com/maps?q=19.50120,78.84780" target="_blank">
-Bus Stand
+<h3>NUR - RAMESWARAM SHOP</h3>
+<p>Category : General Store</p>
+<a href="https://www.google.com/maps?q=19.50092,78.84669" target="_blank">
+Open in Google Maps
 </a>
 </div>
 
+<div class="place">
+<h3>NUR - RATHAN MOBILES</h3>
+<p>Category : Mobile Store</p>
+<a href="https://www.google.com/maps?q=19.50028,78.84767" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - SHARUKH ELECTRONICS</h3>
+<p>Category : Electronics Store</p>
+<a href="https://www.google.com/maps?q=19.50019,78.84779" target="_blank">
+Open in Google Maps
+</a>
+</div>
+<div class="place">
+<h3>NUR - GOVIND BAKERY</h3>
+<p>Category : Bakery</p>
+<a href="https://www.google.com/maps?q=19.50010,78.84787" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - SK DRESSES</h3>
+<p>Category : Clothing Store</p>
+<a href="https://www.google.com/maps?q=19.50004,78.84813" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - AZHAR BAKERY</h3>
+<p>Category : Bakery</p>
+<a href="https://www.google.com/maps?q=19.49993,78.84812" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - SHIFA CLINIC</h3>
+<p>Category : Clinic</p>
+<a href="https://www.google.com/maps?q=19.49976,78.84811" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - ASIF KIRANA</h3>
+<p>Category : Kirana Store</p>
+<a href="https://www.google.com/maps?q=19.49935,78.84811" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - ALEKYA XEROX CENTER</h3>
+<p>Category : Xerox / Print Shop</p>
+<a href="https://www.google.com/maps?q=19.50068,78.84833" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - SAASTIKA MEDICAL</h3>
+<p>Category : Medical Store</p>
+<a href="https://www.google.com/maps?q=19.50096,78.84857" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - NIZAM FOOTWEAR</h3>
+<p>Category : Footwear Store</p>
+<a href="https://www.google.com/maps?q=19.50024,78.84817" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - HIRA PAN SHOP</h3>
+<p>Category : Pan Shop</p>
+<a href="https://www.google.com/maps?q=19.49968,78.84788" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - MAMATA EMPORIUM</h3>
+<p>Category : Emporium / General Store</p>
+<a href="https://www.google.com/maps?q=19.49989,78.84789" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - TULJA BHAVANI JWELLERS</h3>
+<p>Category : Jewellery Store</p>
+<a href="https://www.google.com/maps?q=19.50098,78.84818" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - SAI BABA FERTILIZERS</h3>
+<p>Category : Fertilizer Store</p>
+<a href="https://www.google.com/maps?q=19.50067,78.84814" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - DILEEP KIRANA</h3>
+<p>Category : Kirana Store</p>
+<a href="https://www.google.com/maps?q=19.50116,78.84829" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - MSPAN SHOP</h3>
+<p>Category : General Store</p>
+<a href="https://www.google.com/maps?q=19.49962,78.84796" target="_blank">
+Open in Google Maps
+</a>
+</div>
+
+<div class="place">
+<h3>NUR - VASEEM KIRANA</h3>
+<p>Category : Kirana Store</p>
+<a href="https://www.google.com/maps?q=19.49948,78.84810" target="_blank">
+Open in Google Maps
+</a>
+</div>
 </div>
 
 <script>
-const search=document.getElementById("search");
+const searchInput = document.getElementById("search");
 
-search.addEventListener("keyup",function(){
+searchInput.addEventListener("keyup", function () {
 
-let value=this.value.toLowerCase();
+    const filter = this.value.toLowerCase();
 
-let places=document.querySelectorAll(".place");
+    const places = document.querySelectorAll(".place");
 
-places.forEach(function(place){
+    places.forEach(function(place){
 
-if(place.innerText.toLowerCase().indexOf(value)>-1){
+        const text = place.innerText.toLowerCase();
 
-place.style.display="block";
+        if(text.includes(filter)){
+            place.style.display = "block";
+        }else{
+            place.style.display = "none";
+        }
 
-}else{
-
-place.style.display="none";
-
-}
-
-});
+    });
 
 });
 </script>
+
+<footer style="background:#0d6efd;color:white;text-align:center;padding:15px;margin-top:30px;">
+    <p>© 2026 Narnoor Mandal Village Guide</p>
+</footer>
 
 </body>
 </html>
