@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narnoor Village Guide</title>
 
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+#search{
+    width:90%;
+    max-width:500px;
+    padding:12px;
+    margin:20px auto;
+    display:block;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+.place{
+    background:white;
+    margin:10px 0;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,.15);
+}
+
+.place a{
+    text-decoration:none;
+    color:#0d6efd;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.place a:hover{
+    color:red;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Narnoor Village Guide</h1>
+<p>Click any place to open Google Maps</p>
+</header>
+
+<input type="text" id="search" placeholder="Search Place...">
+
+<div class="container" id="list">
+
+<div class="place">
+<a href="https://www.google.com/maps?q=19.50065,78.84709" target="_blank">
+SBI Bank
+</a>
+</div>
+
+<div class="place">
+<a href="https://www.google.com/maps?q=19.50077,78.84691" target="_blank">
+Kapil Dress Store
+</a>
+</div>
+
+<div class="place">
+<a href="https://www.google.com/maps?q=19.50120,78.84780" target="_blank">
+Bus Stand
+</a>
+</div>
+
+</div>
+
+<script>
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+let places=document.querySelectorAll(".place");
+
+places.forEach(function(place){
+
+if(place.innerText.toLowerCase().indexOf(value)>-1){
+
+place.style.display="block";
+
+}else{
+
+place.style.display="none";
+
+}
+
+});
+
+});
+</script>
+
+</body>
+</html>
