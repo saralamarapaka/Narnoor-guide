@@ -1,2 +1,42 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Narnoor Village Guide</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f4f4}
+header{background:#1565c0;color:#fff;padding:20px;text-align:center}
+#search{display:block;width:90%;max-width:700px;margin:20px auto;padding:12px;font-size:16px}
+.container{max-width:900px;margin:auto;padding:10px}
+.place{background:#fff;margin:10px 0;padding:16px;border-radius:10px;box-shadow:0 2px 6px #ccc}
+.place a{font-size:20px;font-weight:bold;color:#1565c0;text-decoration:none}
+.cat{color:#666;margin-top:6px}
+</style></head><body>
+<header><h1>Narnoor Village Guide</h1></header>
+<input id="search" placeholder="Search place...">
+<div class="container">
+<div class="place"><a href="https://www.google.com/maps?q=19.50065,78.84709" target="_blank">NUR- SBI</a><div class="cat">Bank</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50077,78.84691" target="_blank">NUR-KAPIL DRESS STORE</a><div class="cat">Clothing Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50092,78.84669" target="_blank">NUR-RAMESWARAM SHOP</a><div class="cat">General Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50028,78.84767" target="_blank">NUR-RATHAN MOBILES</a><div class="cat">Mobile Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50019,78.84779" target="_blank">NUR-SHARUKH ELECTRONICS</a><div class="cat">Electronics Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.5001,78.84787" target="_blank">NUR-GOVIND BAKERY</a><div class="cat">Bakery</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50004,78.84813" target="_blank">NUR-SK DRESSES</a><div class="cat">Clothing Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49993,78.84812" target="_blank">NUR-AZHAR BAKERY</a><div class="cat">Bakery</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49976,78.84811" target="_blank">NUR-SHIFA CLINIC</a><div class="cat">Clinic</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49935,78.84811" target="_blank">NUR-ASIF KIRANA</a><div class="cat">Kirana Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50068,78.84833" target="_blank">NUR-ALEKYA XEROX CENTER</a><div class="cat">Xerox/Print Shop</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50096,78.84857" target="_blank">NUR-SAASTIKA MEDICAL</a><div class="cat">Medical Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50024,78.84817" target="_blank">NUR-NIZAM FOOTWEAR</a><div class="cat">Footwear Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49968,78.84788" target="_blank">NUR-HIRA PAN SHOP</a><div class="cat">Pan Shop</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49989,78.84789" target="_blank">NUR-MAMATA EMPORIUM</a><div class="cat">Emporium</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50098,78.84818" target="_blank">NUR-TULJA BHAVANI JWELLERS</a><div class="cat">Jewellery Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50067,78.84814" target="_blank">NUR-SAI BABA FERTILIZERS</a><div class="cat">Fertilizer Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.50116,78.84829" target="_blank">NUR-DILEEP KIRANA</a><div class="cat">Kirana Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49962,78.84796" target="_blank">NUR-MSPAN SHOP</a><div class="cat">General Store</div></div>
+<div class="place"><a href="https://www.google.com/maps?q=19.49948,78.8481" target="_blank">NUR-VASEEM KIRANA</a><div class="cat">Kirana Store</div></div>
 
+</div>
+<script>
+const s=document.getElementById('search');
+s.onkeyup=()=>document.querySelectorAll('.place').forEach(p=>p.style.display=p.innerText.toLowerCase().includes(s.value.toLowerCase())?'block':'none');
+</script></body></html>
 
